@@ -112,11 +112,134 @@
     order: 1;
     width: 48px;
   }
-/*end of nav*/
+/*End of nav*/
+main {
+  margin-top: 110px;
+}
+.container-main{
+  background: #F1F1F1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 1vw;
+  max-width: 95%;
+  height: 450px;
+
+}
+.left-section{
+ order:  1; 
+flex-basis: 58%;
+background: url("../images/moonbase1200-796x417.png") no-repeat;
+background-position: center;
+background-size: cover;
+
+
+
+}
+.content {
+  position: relative;
+  left: 0px;
+  top: 350px;
+  color: #000;
+}
+.content ul{
+  padding:5px;
+}
+.content ul li{
+  display: inline;
+}
+
+.right-section{
+order: 2;
+border: 2px solid gree;
+flex-basis: 40%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
   
+ 
+}
+.right-top{
+  background: url("../images/Apple-Card-796x418.png") no-repeat;
+  background-position: center;
+background-size: cover;
+height: 50%;
+margin-bottom: 1vw;
+}
+.content1 {
+  position: relative;
+  left: 0px;
+  top: 100px;
+  color: #000;
+}
+.content1 ul{
+  padding:5px;
+}
+.content1 ul li{
+  display: inline;
+}
+.right-bottom{
+  background: url("../images/caitlin-1-796x417.png") no-repeat;
+  background-position: center;
+background-size: cover;
+height: 50%;
+
+}
+.content2 {
+  position: relative;
+  left: 0px;
+  top: 100px;
+  color: #000;
+  color: white;
+}
+.content2 ul{
+  padding:5px;
+  
+}
+.content2 ul li{
+  display: inline;
+  color: white;
+}
+.latest-news h2{
+margin-left: 75px;
+}
+
+.news{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+
+}
+.news1{
+ width:270px;
+ padding: 10px;
+ 
+}
+.news1 img{
+  height: 141px;
+}
+.news1 li{
+  display: inline;
+}
+.news1 h4{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: #000;
+}
+
+
+/*End of main section*/
   
   .footer {
     text-align: center;
+    margin-top: 50px;
   }
   
   .footer-links {
