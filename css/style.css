@@ -205,7 +205,7 @@ height: 50%;
   color: white;
 }
 .latest-news h2{
-margin-left: 75px;
+  margin-left: 75px;
 }
 
 .news{
@@ -232,6 +232,16 @@ margin-left: 75px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
   color: #000;
+}
+
+/* Funding round */
+.latest-funding {
+  margin-top: 20px;
+  width: 95vw;
+  margin:  20px auto 20px; auto;
+}
+.funding-head {
+
 }
 
 
