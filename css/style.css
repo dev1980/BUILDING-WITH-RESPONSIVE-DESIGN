@@ -116,9 +116,9 @@
 main {
   margin-top: 110px;
 }
+
 .container-main{
   background: #F1F1F1;
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -131,18 +131,17 @@ main {
 .left-section{
  order:  1; 
 flex-basis: 58%;
-background: url("../images/moonbase1200-796x417.png") no-repeat;
+transition: background-color .4s ease;
+background:rgba(0,0,0,.25) url("../images/selfie-796x398.jpg") no-repeat;
 background-position: center;
 background-size: cover;
-
-
 
 }
 .content {
   position: relative;
   left: 0px;
   top: 350px;
-  color: #000;
+  color: white;
 }
 .content ul{
   padding:5px;
@@ -164,17 +163,18 @@ flex-basis: 40%;
  
 }
 .right-top{
-  background: url("../images/Apple-Card-796x418.png") no-repeat;
+  background: url("../images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash-Cropped-796x419.jpg") no-repeat;
   background-position: center;
 background-size: cover;
 height: 50%;
 margin-bottom: 1vw;
+
 }
 .content1 {
   position: relative;
   left: 0px;
   top: 100px;
-  color: #000;
+  color: white;
 }
 .content1 ul{
   padding:5px;
@@ -204,18 +204,23 @@ height: 50%;
   display: inline;
   color: white;
 }
-.latest-news h2{
-  margin-left: 75px;
-}
 
+#site-wrapper {
+  margin: 50px auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
 .news{
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  width: 95vw;
 
+}
+.latest-news h2{
+  margin-left: 30px;
+  color: #f42;
 }
 .news1{
  width:270px;
@@ -234,16 +239,409 @@ height: 50%;
   color: #000;
 }
 
-/* Funding round */
-.latest-funding {
-  margin-top: 20px;
-  width: 95vw;
-  margin:  20px auto 20px; auto;
-}
-.funding-head {
+/* Latest Fundings */
 
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
+.section-title {
+  margin-bottom: 24px;
+  font-family: var(--source-sans);
+  font-size: 28px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-title::after {
+  content: ">";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  width: 15px;
+}
+
+.section-list-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-list-item {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.section-list-item:nth-child(2),
+.section-list-item:nth-child(3) {
+  border-left: 1px solid #f42;
+}
+
+.section-list-item a {
+  color: #f42;
+  text-decoration: none;
+}
+
+#latest-news-container,
+#latest-funds-container,
+#latest-deals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  margin-bottom: 56px;
+}
+
+.item-content {
+  width: 100%;
+  height: 100%;
+}
+
+.item-img {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  height: 135px;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.item-h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.item-list {
+  font-size: 13px;
+  line-height: 20px;
+  color: #aaa;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 200px;
+}
+
+#latest-fundings,
+#latest-deals {
+  margin-bottom: 55px;
+}
+
+.funds-item {
+  position: relative;
+  overflow: hidden;
+  min-height: 60px;
+  height: 290px;
+  background-color: #FFFAF8;
+}
+
+.f-item-header {
+  position: relative;
+  display: block;
+}
+
+.f-item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
+  margin: 11px;
+  display: block;
+}
+
+.f-item-h4 {
+  background-color: #f42;
+  font-family: var(--source-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  padding: 11px 16px;
+  padding-left: 84px;
+}
+
+.f-item-desc {
+  font-family: var(--source-sans);
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 16px;
+  padding-left: 84px;
+  color: #000;
+  background-color: #FFEBE7;
+}
+
+.f-item-desc h4 {
+  font-size: 18px;
+  color: #000;
+}
+
+.f-item-desc h5 {
+  color: #000;
+  opacity: .5;
+  font-family: var(--roboto-mono);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.f-item-details {
+  padding: 16px;
+  display: block;
+  background-color: #FFFAF8;
+}
+
+.f-item-market,
+.f-item-investor {
+  margin: 0 13px 6px 0;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.f-item-market img,
+.f-item-investor img {
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+}
+
+.f-item-byline {
+  border-top: 1px solid rgba(255, 68, 34, .25);
+  color: #555;
+  padding: 10px 16px 16px;
+  font-size: 12px;
+  background-color: #FFFAF8;
+  height: 100%;
+}
+
+.f-item-p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.f-item-p span {
+  color: #aaa;
+}
+/* 3rd Section */
+#apps-gear-tech {
+  margin-bottom: 64px;
+}
+
+#apps-gear-tech-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 36px 24px;
+}
+
+.agt-h2 {
+  margin-bottom: 14px;
+}
+
+.agt-most-popular {
+  position: relative;
+  height: 0;
+  padding-top: 75%;
+  width: 100%;
+}
+
+.mp-img {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.mp-header {
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.mp-img-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.mp-header-h5 {
+  font-family: var(--roboto-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.mp-header-h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.mp-header-byline {
+  display: flex;
+  flex-direction: row;
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.mp-header-author::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
+}
+
+.agt-latest {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 68, 34, .06);
+  margin: 2px 0;
+}
+
+.agt-latest-header {
+  display: block;
+  overflow: hidden;
+  padding: 10px 14px 0;
+}
+
+.agt-latest-h5 {
+  color: #f42;
+  font-size: 13px;
+  font-family: var(--roboto-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.agt-latest-title {
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 14px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.agt-latest-img {
+  flex: 0 0 96px;
+  height: 96px;
+  width: 96px;
+  background-color: #000;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 1;
+}
+
+.agt-list-item {
+  border-bottom: 1px solid #eee;
+}
+
+.agt-list-h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+
+.agt-list-h4::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 14px;
+  width: 4px;
+}
+
+/* 4th Section */
+.d-item-img {
+  background-position: 0 100%;
+  padding-top: 74.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.d-item-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.d-item-dealPrice {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 20px;
+  padding-top: 4px;
+}
+
+.d-item-dealPrice-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+.d-item-dealPrice-new {
+  font-size: 16px;
+  color: #555;
+}
 
 /*End of main section*/
   
