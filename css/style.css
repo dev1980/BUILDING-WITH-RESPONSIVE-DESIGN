@@ -133,7 +133,7 @@ background-size: cover;
 
 .right-section{
 order: 2;
-border: 2px solid gree;
+border: 2px solid green;
 flex-basis: 40%;
 }
 
@@ -231,7 +231,7 @@ height: 50%;
 
 .section-title {
   margin-bottom: 24px;
-  font-family: var(--source-sans);
+  font-family: sans-serif;
   font-size: 28px;
   color: #f42;
   font-weight: 700;
@@ -360,7 +360,7 @@ height: 50%;
 
 .f-item-h4 {
   background-color: #f42;
-  font-family: var(--source-sans);
+  font-family: sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
@@ -370,7 +370,7 @@ height: 50%;
 }
 
 .f-item-desc {
-  font-family: var(--source-sans);
+  font-family: sans-serif;
   font-weight: 700;
   line-height: 1;
   padding: 11px 16px;
@@ -387,7 +387,7 @@ height: 50%;
 .f-item-desc h5 {
   color: #000;
   opacity: .5;
-  font-family: var(--roboto-mono);
+  font-family:'Roboto Mono', monospace;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -501,7 +501,7 @@ height: 50%;
 }
 
 .mp-header-h5 {
-  font-family: var(--roboto-mono);
+  font-family: 'Roboto Mono', monospace;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -549,7 +549,7 @@ height: 50%;
 .agt-latest-h5 {
   color: #f42;
   font-size: 13px;
-  font-family: var(--roboto-mono);
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -1011,7 +1011,6 @@ height: 50%;
     }
   }
   @media screen and (max-width: 768px) {
-    
     .nav .logo {
         display: block;
         z-index: 5;
@@ -1021,7 +1020,6 @@ height: 50%;
         left: 0;
         position: absolute;
         top: 0;
-      
     }
     
     .nav .menu {
