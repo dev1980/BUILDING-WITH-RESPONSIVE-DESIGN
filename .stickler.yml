@@ -1,11 +1,8 @@
   linters:
-  stylelint:
-  fixers:
-    enable: true
-    flake8:
-    eslint:
-        config: './eslint.config'
-    csslint:
+    stylelint:
+    fixers:
+      enable: true
+    
 
     
 
