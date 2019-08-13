@@ -1,4 +1,5 @@
   linters:
+  stylelint:
   fixers:
     enable: true
     flake8:
