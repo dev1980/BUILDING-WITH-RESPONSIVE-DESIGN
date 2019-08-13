@@ -1,7 +1,5 @@
   linters:
     stylelint:
-    fixers:
-      enable: true
     
 
     
