@@ -1009,9 +1009,9 @@ height: 50%;
     .footer-legal .wrapper span {
       display: inline-block;
     }
-  }
+
   @media screen and (max-width: 768px) {
-    .nav .logo {
+  .nav.logo {
         display: block;
         z-index: 5;
         height: 16px;
@@ -1076,3 +1076,4 @@ height: 50%;
       flex-basis: 33.3%;
     }
   }
+  
