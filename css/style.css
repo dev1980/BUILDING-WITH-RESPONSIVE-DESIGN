@@ -1,11 +1,8 @@
-* {
+body {
+  color: #555;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  color: #555;
 }
 
 ul {
@@ -753,30 +750,6 @@ color: #555;
     font-size: 14px;
   }
 
-  .nav-logo img {
-    height: 16px;
-    width: 66px;
-    padding: 16px 0;
-  }
-
-  .nav-logo>a {
-    display: inline-block;
-    position: relative;
-    height: 80px;
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
-
-  .nav-logo {
-    left: 0;
-    right: 0;
-    position: absolute;
-    height: 80px;
-    width: 106px;
-    padding: 0;
-    margin: 0;
-  }
-
   .nav-menu-search {
     display: flex;
     color: #aaa;
@@ -1017,9 +990,9 @@ color: #555;
 }
 
 @media screen and (max-width: 768px) {
-.nav.logo {
+nav.logo {
       display: block;
-      z-index: 5;
+      z-index: 1;
       height: 16px;
       padding: 16px 20px;
       width: 66px;
