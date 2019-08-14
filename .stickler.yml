@@ -8,6 +8,3 @@ files:
   ignore:
     - "src/generated/*"
     - "webroot/bower_components/*"
-
-       
-      
