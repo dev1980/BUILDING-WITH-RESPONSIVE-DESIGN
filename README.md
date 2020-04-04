@@ -15,7 +15,7 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! Feel free to check [issues page](#)
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/dev1980/BUILDING-WITH-RESPONSIVE-DESIGN/issues)
 
 1. Fork it (https://github.com/dev1980/BUILDING-WITH-RESPONSIVE-DESIGN/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
